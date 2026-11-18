@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Idle Town Center: an hourglass drawn by two glowing bulbs; the dark tile between them is the glass. -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A2A14"/>
+      <stop offset=".55" stop-color="#21170B"/>
+      <stop offset="1" stop-color="#150E06"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="62%">
+      <stop offset=".6" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".35"/>
+    </radialGradient>
+    <!-- Top bulb: brightest just above its middle, like sand catching light. -->
+    <radialGradient id="glowTop" cx="50%" cy="58%" r="62%">
+      <stop offset="0" stop-color="#FFE17A"/>
+      <stop offset=".45" stop-color="#F7BE2E"/>
+      <stop offset=".8" stop-color="#C98714"/>
+      <stop offset="1" stop-color="#7A4A08"/>
+    </radialGradient>
+    <!-- Bottom bulb: brightest near the neck, where the light falls through. -->
+    <radialGradient id="glowBottom" cx="50%" cy="38%" r="66%">
+      <stop offset="0" stop-color="#FFE586"/>
+      <stop offset=".4" stop-color="#F9C238"/>
+      <stop offset=".8" stop-color="#D28F16"/>
+      <stop offset="1" stop-color="#8A560A"/>
+    </radialGradient>
+    <clipPath id="body"><rect x="100" y="100" width="824" height="824" rx="186"/></clipPath>
+    <filter id="drop" x="-10%" y="-10%" width="120%" height="125%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+  <rect x="100" y="114" width="824" height="824" rx="186" fill="#000" opacity=".35" filter="url(#drop)"/>
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#tile)"/>
+  <g clip-path="url(#body)">
+    <!-- a soft halo so the glass seems lit from inside -->
+    <path d="M262 80 H762 C776 318 628 446 512 512 C396 446 248 318 262 80 Z M262 944 H762 C776 706 628 578 512 512 C396 578 248 706 262 944 Z"
+          fill="#F2B530" opacity=".22" filter="url(#soft)"/>
+    <path d="M262 80 H762 C776 318 628 446 512 514 C396 446 248 318 262 80 Z" fill="url(#glowTop)"/>
+    <path d="M262 944 H762 C776 706 628 578 512 510 C396 578 248 706 262 944 Z" fill="url(#glowBottom)"/>
+    <rect x="100" y="100" width="824" height="824" fill="url(#vignette)"/>
+    <!-- a hairline of light on the tile's top edge -->
+    <rect x="101" y="101" width="822" height="822" rx="185" fill="none" stroke="#FFDDA0" stroke-opacity=".10" stroke-width="3"/>
+  </g>
+</svg>

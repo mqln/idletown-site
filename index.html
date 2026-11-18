@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Idle Town Center — AoE2 spectating on Mac</title>
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<meta name="description" content="Watch your Age of Empires II recordings on Mac with a live stats overlay and a timeline you can jump around.">
+<style>
+  :root { --bg:#14161a; --panel:#1d2026; --text:#e9e6df; --muted:#a3a39c; --gold:#e3b341; --line:#2c3038; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f7f5f0; --panel:#ffffff; --text:#1d1d1b; --muted:#5f5f58; --gold:#9a6d00; --line:#e3dfd6; } }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--text); font:17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width:880px; margin:0 auto; padding:56px 16px 80px; }
+  h1 { font-size:clamp(34px,6vw,52px); line-height:1.1; margin:0 0 12px; letter-spacing:-.02em }
+  h2 { font-size:22px; margin:56px 0 12px }
+  .eyebrow { color:var(--gold); font-weight:600; letter-spacing:.08em; text-transform:uppercase; font-size:13px }
+  .lede { color:var(--muted); font-size:20px; max-width:620px }
+  .buttons { display:flex; flex-wrap:wrap; gap:12px; margin:28px 0 8px }
+  .btn { display:inline-block; padding:12px 20px; border-radius:10px; font-weight:600; text-decoration:none }
+  .primary { background:var(--gold); color:#16130a }
+  .secondary { border:1px solid var(--line); color:var(--text); background:var(--panel) }
+  .small { color:var(--muted); font-size:14px }
+  .shot { margin:40px 0 0; aspect-ratio:16/10; border:1px dashed var(--line); border-radius:14px; background:var(--panel);
+          display:grid; place-items:center; color:var(--muted); font-size:14px; overflow:hidden }
+  .shot img { width:100%; height:100%; object-fit:cover }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-top:16px }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px }
+  .card h3 { margin:0 0 6px; font-size:17px }
+  .card p { margin:0; color:var(--muted); font-size:15px }
+  ol, ul { padding-left:22px } li { margin:6px 0 }
+  details { border-top:1px solid var(--line); padding:14px 0 } summary { cursor:pointer; font-weight:600 }
+  details p { color:var(--muted); margin:10px 0 0 }
+  footer { margin-top:64px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); padding-top:20px }
+  a { color:var(--gold) }
+</style>
+</head>
+<body>
+<main>
+  <img src="icon.svg" alt="" width="96" height="96" style="display:block;margin:0 0 20px -8px">
+  <div class="eyebrow">Free · macOS 14+ · Apple silicon</div>
+  <h1>Idle Town Center</h1>
+  <p class="lede">Watch your Age of Empires II recordings on Mac with a live stats overlay: resources, villagers, idle time and army for both players, plus a timeline you can jump around.</p>
+  <div class="buttons">
+    <a class="btn primary" href="https://github.com/mqln/idletown-site/releases/latest">Download for Mac</a>
+    <a class="btn secondary" id="support" href="https://ko-fi.com/mqleen">☕ Support on Ko-fi</a>
+  </div>
+  <div class="small">Updates install themselves. Idle Town Center is free, and tips keep it going after each Game update.</div>
+
+  <div class="shot"><!-- Replace with <img src="overlay.jpg" alt="Idle Town Center overlay during a match"> -->Overlay screenshot</div>
+
+  <h2>What you get</h2>
+  <div class="grid">
+    <div class="card"><h3>Live overlay</h3><p>The resources, villager split, military pop and score for each player, at every moment of the match.</p></div>
+    <div class="card"><h3>Idle time</h3><p>Idle villagers and idle Town Center time, counted up as the game plays.</p></div>
+    <div class="card"><h3>Timeline</h3><p>Jump to any minute, then speed up, slow down or switch POV.</p></div>
+    <div class="card"><h3>Library</h3><p>Every Recording, searchable by player, civ and map, with villager graphs.</p></div>
+  </div>
+
+  <h2>Getting started</h2>
+  <ol>
+    <li>Install <strong>Age of Empires II: Definitive Edition</strong> from Steam (the Feral Mac version) and start Steam.</li>
+    <li>Open the DMG and drag Idle Town Center to Applications.</li>
+    <li>Open Idle Town Center, pick a Recording and click <strong>Watch in Age of Empires II</strong>.</li>
+  </ol>
+
+  <h2>Questions</h2>
+  <details><summary>It says “This Age of Empires II build is not supported”</summary>
+    <p>A Game update just came out. Every Game update needs a matching Idle Town Center update; it usually follows within a few days and installs itself. Your Game is untouched, and you can keep playing normally in the meantime.</p></details>
+  <details><summary>A Recording is marked “Older version” or goes out of sync</summary>
+    <p>The Game only replays Recordings from its own build exactly. Recordings made before the last Game update can drift. This is how the Game works and isn't something Idle Town Center can fix.</p></details>
+  <details><summary>Does it change my game or work online?</summary>
+    <p>Idle Town Center restarts the Game with its stats reader attached, only when you choose to watch a Recording. It never edits the Game's installed files. It does hide the Game's startup options window for that one launch, and puts your setting back afterwards. It has no part in online play. To play normally again, quit the Game and start it from Steam.</p></details>
+  <details><summary>What data does it collect?</summary>
+    <p>Anonymous usage counts only, such as "a Recording was watched" or "the Leaderboard was opened", so we can see what's used and what breaks. No names, no player or file names, no account. You can turn it off under Idle Town Center › Share Anonymous Usage Data.</p></details>
+  <details><summary>Intel Macs?</summary>
+    <p>Not supported. The Mac version of the Game runs on Apple silicon only.</p></details>
+
+  <footer>
+    Idle Town Center is a fan project. It isn't affiliated with or endorsed by Microsoft, World’s Edge or Feral Interactive.
+    Age of Empires is a trademark of Microsoft Corporation.
+  </footer>
+</main>
+</body>
+</html>
