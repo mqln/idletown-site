@@ -31,6 +31,11 @@
   ol, ul { padding-left:22px } li { margin:6px 0 }
   details { border-top:1px solid var(--line); padding:14px 0 } summary { cursor:pointer; font-weight:600 }
   details p { color:var(--muted); margin:10px 0 0 }
+  .maker { display:flex; gap:20px; align-items:center; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:20px; margin-top:16px }
+  .maker img { width:112px; height:112px; border-radius:50%; object-fit:cover; flex:none }
+  .maker p { margin:0 0 10px; }
+  .maker p:last-child { margin:0 }
+  @media (max-width:520px) { .maker { flex-direction:column; align-items:flex-start } }
   footer { margin-top:64px; color:var(--muted); font-size:13px; border-top:1px solid var(--line); padding-top:20px }
   a { color:var(--gold) }
 </style>
@@ -63,6 +68,15 @@
     <li>Open the DMG and drag Idle Town Center to Applications.</li>
     <li>Open Idle Town Center, pick a Recording and click <strong>Watch in Age of Empires II</strong>.</li>
   </ol>
+
+  <h2>Who made this, and why</h2>
+  <div class="maker">
+    <img src="maker.jpg" alt="mqln, eating a banana" width="112" height="112">
+    <div>
+      <p>Hi, I'm mqln. I play Age of Empires II on a Mac, and the good spectator tools only run on Windows. I wanted to see where my games actually went wrong (mostly: idle Town Centers), so I built this.</p>
+      <p>It's free. Every Game update breaks it until I fix it, so if it's useful to you, <a href="https://ko-fi.com/mqleen">a coffee</a> keeps that going. Questions or bugs: <a href="mailto:hello@idletown.center">hello@idletown.center</a>.</p>
+    </div>
+  </div>
 
   <h2>Questions</h2>
   <details><summary>It says “This Age of Empires II build is not supported”</summary>
