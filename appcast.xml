@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Idle Town Center</title>
+        <item>
+            <title>1.0</title>
+            <pubDate>Wed, 18 Nov 2026 21:43:02 +0100</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p>First public release.</p>
+<ul>
+<li><strong>Watch Recordings with a live overlay</strong>: each player's resources, villagers, army, idle villagers and idle Town Center time, plus a score table.</li>
+<li><strong>Timeline</strong>: jump to any minute, change speed, switch whose view you watch.</li>
+<li><strong>Recordings</strong>: every match in one list, searchable by player, civ and map, with villager graphs.</li>
+<li><strong>Friends</strong>: follow players and download and watch their recent ranked matches.</li>
+<li><strong>Leaderboard</strong>: the Mac ranked ladder, with stats and recent matches for any player.</li>
+</ul>
+<p>Requires Age of Empires II: Definitive Edition (the Mac version on Steam). Recordings made on an older Game build may go out of sync.</p>
+]]></description>
+            <enclosure url="https://github.com/mqln/idletown-site/releases/download/v1.0/IdleTownCenter-1.0.dmg" length="4703231" type="application/octet-stream" sparkle:edSignature="HEgZAHhVasjD0fRm1SHEqukB+6revvsfVq/j3TDdF/uQShg5hFDIeBlFnicqGTkyKkaLABvPqGd+vrlzX1PzDQ=="/>
+        </item>
+    </channel>
+</rss>
