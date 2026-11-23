@@ -3,6 +3,19 @@
     <channel>
         <title>Idle Town Center</title>
         <item>
+            <title>1.0.1</title>
+            <pubDate>Mon, 23 Nov 2026 12:59:42 +0100</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<ul>
+<li><strong>Warning for older Recordings</strong>: watching a Recording made on an older build of Age of Empires II now asks first, because the Game can only replay its own version exactly and older Recordings tend to go out of sync. You can turn the warning off.</li>
+<li><strong>Better out-of-sync diagnostics</strong>: anonymous usage data now includes the Game and Recording builds and notes when playback stops unexpectedly, so sync problems can be tracked down. No player names or file names are sent, and you can still turn this off in Settings.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/mqln/idletown-site/releases/download/v1.0.1/IdleTownCenter-1.0.1.dmg" length="4726950" type="application/octet-stream" sparkle:edSignature="r+7doqfJlFB3tBblO9HsaAd/6gVh2h0XNOFpLMbUysnBCnbBbuAPpRieFB982R9mZw5/QAN10y+qD2NinkWGAw=="/>
+        </item>
+        <item>
             <title>1.0</title>
             <pubDate>Wed, 18 Nov 2026 21:43:02 +0100</pubDate>
             <sparkle:version>2</sparkle:version>
