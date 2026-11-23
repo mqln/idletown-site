@@ -3,6 +3,18 @@
     <channel>
         <title>Idle Town Center</title>
         <item>
+            <title>1.0.2</title>
+            <pubDate>Mon, 23 Nov 2026 13:25:24 +0100</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<ul>
+<li><strong>Automatic updates</strong>: Idle Town Center now downloads updates in the background and installs them the next time it quits. You can turn this off in Settings › Updates.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/mqln/idletown-site/releases/download/v1.0.2/IdleTownCenter-1.0.2.dmg" length="3630481" type="application/octet-stream" sparkle:edSignature="Ma2IZt6z0B+RgtwDZhxKybwAj/qAR1gX8eqxQ/h71NiYvjFouryInUPvHa5UBSHDDls2wcjm08xyi6fwtWGTAg=="/>
+        </item>
+        <item>
             <title>1.0.1</title>
             <pubDate>Mon, 23 Nov 2026 12:59:42 +0100</pubDate>
             <sparkle:version>3</sparkle:version>
